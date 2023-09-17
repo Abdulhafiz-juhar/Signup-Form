@@ -81,7 +81,11 @@ footer.photo-credit > a {
 .right > .right-bottom {
   background-color: #f9fafb;
 }
-
+.right-top > .top-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 33px;
+}
 .right > .right-middle {
   box-shadow: inset 1px -5px 4px 0px rgb(0 0 0 / 10%);
 }
