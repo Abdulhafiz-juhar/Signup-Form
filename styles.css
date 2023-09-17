@@ -29,7 +29,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+header {
+  font-size: clamp(2rem, 5vmin, 3rem);
+}
 header > div.logo-title {
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
@@ -45,15 +47,15 @@ header > div.logo-title {
   align-items: center;
 }
 .logo > img {
-  width: 100%;
-  height: 80%;
+  width: 2em;
+  height: 2.5em;
 }
 
 div.logo-title > div.title {
   color: white;
   font-family: "norsebold", sans-serif;
   align-self: center;
-  font-size: 2rem;
+  font-size: 1em;
 }
 
 footer.photo-credit {
@@ -78,11 +80,23 @@ footer.photo-credit > a {
 }
 
 .right > .right-top,
+.right > .right-middle,
+.right > .right-bottom {
+  height: 33%;
+}
+
+.right > .right-top,
 .right > .right-bottom {
   background-color: #f9fafb;
 }
+.right-top {
+  overflow-y: scroll;
+}
+.right-top::-webkit-scrollbar {
+  display: none;
+}
 .right-top > .top-text {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 3.5vmin, 3rem);
   font-weight: 400;
   padding: 33px;
 }
