@@ -1,1 +1,78 @@
- 
+@font-face {
+  font-family: "norsebold";
+  src: url("fonts/norse/norse-bold_1-webfont.woff2") format("woff2"),
+    url("fonts/norse/norse-bold_1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.left {
+  width: 35%;
+  background-image: url(images/formBackground.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header > div.logo-title {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 6rem 0;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo > img {
+  width: 100%;
+  height: 80%;
+}
+
+div.logo-title > div.title {
+  color: white;
+  font-family: "norsebold", sans-serif;
+  align-self: center;
+  font-size: 2rem;
+}
+
+footer.photo-credit {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: auto;
+  color: white;
+}
+footer.photo-credit > a {
+  text-decoration: underline;
+  color: white;
+}
+.right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right > div {
+  height: 100%;
+}
