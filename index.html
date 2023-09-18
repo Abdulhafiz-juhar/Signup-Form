@@ -36,38 +36,76 @@
           </div>
         </div>
         <div class="right-middle">
-          <form action="" class="account-form">
+          <form action="" class="account-form" id="signup-form">
             <div class="form-heading">
               <h1>Let's do this!</h1>
             </div>
             <div class="row1">
               <div>
-                <label for="fname">FIRST NAME</label><input type="text" />
+                <label for="fname">FIRST NAME</label
+                ><input
+                  type="text"
+                  name="firstName"
+                  placeholder="Abdulhafiz"
+                  required
+                />
               </div>
               <div>
-                <label for="lname">LAST NAME</label><input type="text" />
+                <label for="lname">LAST NAME</label
+                ><input
+                  type="text"
+                  name="lastName"
+                  placeholder="Juhar"
+                  required
+                />
               </div>
             </div>
             <div class="row2">
-              <div><label for="email">EMAIL</label><input type="email" /></div>
               <div>
-                <label for="tel">PHONE NUMBER</label><input type="text" />
+                <label for="email">EMAIL</label
+                ><input
+                  type="email"
+                  name="email"
+                  placeholder="Aj@gmail.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="tel">PHONE NUMBER</label
+                ><input
+                  type="tel"
+                  name="phoneNumber"
+                  pattern="\d*"
+                  placeholder="09******32"
+                  required
+                />
               </div>
             </div>
             <div class="row3">
               <div>
-                <label for="password">PASSWORD</label><input type="password" />
+                <label for="password">PASSWORD</label
+                ><input
+                  type="password"
+                  name="password"
+                  placeholder="****"
+                  required
+                />
               </div>
               <div>
                 <label for="confirm_password">CONFIRM PASSOWRD</label
-                ><input type="password" />
+                ><input
+                  type="password"
+                  name="confirmPassword"
+                  placeholder="****"
+                  required
+                />
               </div>
             </div>
           </form>
         </div>
         <div class="right-bottom">
           <div class="form-submit">
-            <button>Create Account</button>
+            <button type="submit" form="signup-form">Create Account</button>
           </div>
           <p class="already-login">
             Already have an acccount? <a href="">Log in</a>
