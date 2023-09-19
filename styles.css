@@ -64,6 +64,7 @@ footer.photo-credit {
   text-align: center;
   margin-top: auto;
   color: white;
+  font-size: clamp(0.5rem, 1vw, 0.9rem);
 }
 footer.photo-credit > a {
   text-decoration: underline;
