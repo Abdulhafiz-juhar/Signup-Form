@@ -118,6 +118,10 @@ footer.photo-credit > a {
   color: white;
 }
 
+/* .form-submit > button:disabled {
+  opacity: 0.9;
+} */
+
 .right-bottom > p {
   margin-left: 2rem;
 }
@@ -188,3 +192,12 @@ form input:not(:focus):not(:placeholder-shown):valid {
 }
 
 /* passoword confirmation styles */
+.error-message {
+  font-size: 0.5rem;
+  color: red;
+  display: none;
+}
+
+.show-error {
+  display: block;
+}
