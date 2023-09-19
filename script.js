@@ -32,11 +32,21 @@ function checkPasswords() {
         if (!errorMessage.classList.contains("show-error")) {
           errorMessage.classList.add("show-error");
         }
+        if (password.checkValidity() || confirmPassword.checkValidity()) {
+          password.setCustomValidity("Please make sure passwords are the same");
+          confirmPassword.setCustomValidity(
+            "Please make sure passwords are the same"
+          );
+        }
         console.log("error is displaying");
       }
     } else {
       if (errorMessage.classList.contains("show-error")) {
         errorMessage.classList.remove("show-error");
+      }
+      if (!password.checkValidity() || !confirmPassword.checkValidity()) {
+        password.setCustomValidity("");
+        confirmPassword.setCustomValidity("");
       }
       console.log("error is hidden");
     }
