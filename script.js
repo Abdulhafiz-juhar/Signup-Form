@@ -41,7 +41,7 @@ function checkPasswords() {
       errorMessage.classList.remove("show-error");
     }
     if (!password.checkValidity() || !confirmPassword.checkValidity()) {
-      password.setCustomValidity("");
+      password.setCustomVatlidity("");
       confirmPassword.setCustomValidity("");
     }
     console.log("error is hidden");
