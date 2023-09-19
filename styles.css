@@ -118,6 +118,10 @@ footer.photo-credit > a {
   color: white;
 }
 
+form h1 {
+  font-size: clamp(1em, 7vw, 2em);
+}
+
 /* .form-submit > button:disabled {
   opacity: 0.9;
 } */
