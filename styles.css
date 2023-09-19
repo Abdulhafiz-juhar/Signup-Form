@@ -206,3 +206,6 @@ form input:not(:focus):not(:placeholder-shown):valid {
 .show-error {
   display: block;
 }
+/* comment to adjust later */
+/* left-padding of all the right side elements can be
+adjusted to be responsive on mobile */
